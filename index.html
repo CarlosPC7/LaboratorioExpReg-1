@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css">
+    <title>Laboratorio Expresiones Regulares</title>
+  </head>
+  <body>
+    <div id="app">
+      <div>
+        <h1>Validaciones IBAN</h1>
+        <form action="search" id="search-form">
+          <label for="input-iban" class="visually-hidden"></label>
+          <input type="text" id="input-iban" name="query" placeholder="Introduce IBAN" required />
+          <button type="submit" id="search-iban">Valida IBAN</button>
+        </form>
+      </div>
+      <div id="contenedor-IBAN" class="contenedor-IBAN"></div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
