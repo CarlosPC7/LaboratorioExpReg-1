@@ -30,6 +30,6 @@ export const mostrarCodigos = () => {
 const validaIban = (iban: string) => {
   const limpiaIban = iban.replace(/[\s-]/g, "");
   const esValido = esValidoIban(limpiaIban);
-
+  console.log(esValido)
   esValido ? ibanValidado(limpiaIban) : ibanNoValidado();
 }

@@ -1,8 +1,8 @@
-import { isValidBBAN } from "ibantools";
+import { isValidIBAN } from "ibantools";
 import { Validador } from "./validacion.model";
 import bancos from './bancos.json';
 
-export const esValidoIban = (iban: string) => isValidBBAN(iban);
+export const esValidoIban = (iban: string) => isValidIBAN(iban);
 
 export const ibanValidado = (iban: string) => {
   const codigosExtraidos = extraeCodigos(iban);
